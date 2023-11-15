@@ -1,0 +1,57 @@
+body {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background: url('bg_img.avif');
+    background-size: cover;
+    margin: 100px;
+    padding: 100px;
+}
+
+form {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the gap as needed for spacing */
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    align-items: center;
+    font-weight: 200;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+button {
+    grid-column: span 2; /* Make the button span two columns */
+    /*padding: 10px;*/
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: black;
+    cursor: pointer;
+    margin-left: 450px;
+    margin-right: 450px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#outputDiv {
+    grid-column: span 2; /* Make the outputDiv span two columns */
+    margin-top: 10px;
+}

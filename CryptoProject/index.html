@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading...</title>
+    <style>
+        /* Preloader styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <h1><span class="typing"></span></h1>
+    </div>
+
+    <script>
+        // Delay the redirection to the main page after 3 seconds
+        setTimeout(function() {
+            window.location.href = "main.html"; // Redirect to the main page
+        }, 3000); // Display the preloader for 3 seconds
+    </script>
+
+    <script src="vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.typing',{ strings: ["Welcome to Encrytion Systems..."], loop: true, typeSpeed: 73, backSpeed: 50 } );
+    </script>
+</body>
+</html>
